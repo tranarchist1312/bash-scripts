@@ -2,17 +2,22 @@
 
 sudo pacman -Syu
 
-# installs a basic suite of apps that I use, an emoji font, as well as git and base-devel which are needed for installing from the AUR
-sudo pacman -S git base-devel firefox discord flatpak gimp spectacle qbittorrent noto-fonts-emoji neofetch libreoffice-still gparted element-desktop
- 
+# installs a basic suite of apps that I use, an emoji font, as well as base-devel which is needed for installing from the AUR
+sudo pacman -S base-devel firefox discord flatpak gimp spectacle qbittorrent noto-fonts-emoji neofetch libreoffice-still gparted element-desktop
+
+wait
+
 # installing the yay AUR helper
 git clone https://aur.archlinux.org/yay.git
+wait
 cd yay
 makepkg -si
+wait
 
 cd ~
 
 yay -S balena-etcher
+wait
 
 reboot
-# a reboot is required after installing flatpak
+#reboot is required after installing flatpak
