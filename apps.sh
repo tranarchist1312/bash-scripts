@@ -12,11 +12,12 @@ git clone https://aur.archlinux.org/yay.git
 wait
 cd yay
 makepkg -si
-wait
 
+wait
 cd ~
 
 yay -S balena-etcher
+
 wait
 
 sleep 10
